@@ -1,0 +1,30 @@
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list-wrap {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.header-list {
+    padding: 28px 0px 31px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.header-link {
+    font-family: Noah;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+    color: var(--Yellow);
+}
