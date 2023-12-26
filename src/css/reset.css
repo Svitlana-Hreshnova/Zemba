@@ -60,7 +60,21 @@ ul {
 }
 
 .container {
-    width: 1280px;
-    padding: 0 76px;
+    width: 362px;
+    padding: 0 21px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 49px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+        padding: 0 76px;
+    }
 }

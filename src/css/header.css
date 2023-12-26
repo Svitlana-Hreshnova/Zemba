@@ -1,3 +1,13 @@
+.header-page {
+    padding: 16px 21px;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-page {
+        padding: 0;
+    }
+}
+
 .header-wrap {
     display: flex;
     justify-content: space-between;
@@ -11,10 +21,16 @@
 }
 
 .header-list {
-    padding: 28px 0px 31px;
-    display: flex;
-    align-items: center;
-    gap: 33px;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-list {
+        padding: 28px 0px 31px;
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
 }
 
 .header-link {
@@ -27,4 +43,27 @@
 .header-link:focus,
 .header-link:active {
     color: var(--Yellow);
+}
+
+.header-icon-wrap {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.icon-burger {
+    fill: var(--Yellow);
+    transition: fill 0.3s ease-in-out;
+}
+
+.icon-burger:hover,
+.icon-burger:focus,
+.icon-burger:active {
+    fill: var(--Pink);
+}
+
+@media screen and (min-width: 1024px) {
+    .icon-burger {
+        display: none;
+    }
 }

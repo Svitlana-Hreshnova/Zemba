@@ -5,11 +5,11 @@
 
 .about-container {
     width: 1280px;
-    padding-left: 163px;
-    padding-right: 137px;
     margin: 0 auto;
     display: flex;
-    gap: 71px;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-title {
@@ -27,6 +27,7 @@
     font-size: 18px;
     line-height: 1.4;
     margin-bottom: 39px;
+    width: 466px;
 }
 
 .about-link-wrap {
@@ -51,17 +52,54 @@
 }
 
 .about-link-2 {
-    color: var(--Main-background);
     background-color: var(--Secondary-text);
     padding: 12px 45px;
     border-radius: 25px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .about-link-2:hover,
 .about-link-2:focus,
 .about-link-2:active {
     background-color: var(--Pink);
-    color: var(--Secondary-text);
+}
 
+.about-icon-wrap {
+    color: var(--Main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-link-2:hover .about-icon-wrap,
+.about-link-2:focus .about-icon-wrap,
+.about-link-2:active .about-icon-wrap {
+    color: var(--Secondary-text);
+}
+
+.about-image-wrap {
+    position: relative;
+}
+
+.about-image {
+    border-radius: 70px;
+    background: #C4C4C4;
+    position: relative;
+    z-index: 1;
+}
+
+.about1 {
+    position: absolute;
+    top: 373;
+    right: 409px;
+    z-index: 2;
+}
+
+.about2 {
+    position: absolute;
+    bottom: 212;
+    left: 246;
+    z-index: 0;
 }
