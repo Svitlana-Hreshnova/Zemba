@@ -60,7 +60,7 @@ ul {
 }
 
 .container {
-    width: 362px;
+    max-width: 362px;
     padding: 0 21px;
     margin: 0 auto;
 }
@@ -74,7 +74,7 @@ ul {
 
 @media screen and (min-width: 1280px) {
     .container {
-        width: 1280px;
+        max-width: 1280px;
         padding: 0 76px;
     }
 }

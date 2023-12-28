@@ -20,6 +20,15 @@
     gap: 41px;
 }
 
+.logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover,
+.logo.focus {
+    transform: scale(1.1);
+}
+
 .header-list {
     display: none;
 }
@@ -37,6 +46,7 @@
     font-family: Noah;
     font-size: 16px;
     font-weight: 700;
+    transition: color 0.3s ease-in-out;
 }
 
 .header-link:hover,

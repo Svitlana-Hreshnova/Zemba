@@ -1,11 +1,23 @@
 .hero-page {
-    width: 1366px;
+    max-width: 1023px;
     height: 640px;
     background-image: url(../images/hero.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-page {
+        max-width: 1280px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-page {
+        max-width: 1367px;
+    }
 }
 
 @media screen and (min-width: 1367px) {
